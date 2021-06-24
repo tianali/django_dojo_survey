@@ -4,9 +4,6 @@ from django.shortcuts import render, redirect
 def index(request):
     return render(request, 'index.html')
 
-def result(request):
-    return render(request, 'result.html')
-
 def inputs(request):
     if request.method == 'POST':
         request.session['fname'] = request.POST['fname']
@@ -15,3 +12,13 @@ def inputs(request):
         request.session['language'] = request.POST['language']
         request.session['comments'] = request.POST['comments']
     return redirect('/result')
+
+def result(request):
+    context = {
+        'fname': request.session['fname'],
+        'gender': request.session['gender'],
+        'location': request.session['location'],
+        'language': request.session['language'],
+        'comments': request.session['comments'],
+    }
+    return render(request, 'result.html', context)

@@ -12,11 +12,12 @@
 <body>
     <div class="container">
         <h4>Submitted Info</h4>
-        <p>Full Name: {{ request.session.fname }}</p>
-        <p>Gender: {{ request.session.gender }}</p>
-        <p>Location: {{ request.session.location }}</p>
-        <p>Languages: {{ request.session.language}} </p>
-        <p>Comments: {{ request.session.comments }}</p>
+        <p>Full Name: {{ fname }}</p>
+        <p>Gender: {{ gender }}</p>
+        <p>Location: {{ location }}</p>
+        <p>Languages: {{ language}} </p>
+        <p>Comments: {{ comments }}</p>
+        <p>Hi, my name is {{ fname }} and I am attending Coding Dojo in {{ location }}. My favorite language is {{ language }}. {{ comments }}</p>
     </div>
 </body>
 </html>
