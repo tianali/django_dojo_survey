@@ -14,32 +14,6 @@
     border: 2px solid black;
 }
 
-.section {
-    margin: 5px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
+p {
+    margin: 10px;
 }
-
-.label {
-    width: 100px;
-    padding: 5px;
-    text-align: left;
-    display: inline;
-}
-
-#fname, #location, #language {
-    width: 280px;
-}
-
-#comments {
-    width: 280px;
-    height: 180px;
-}
-
-#button {
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(203, 177, 221);
-}
-
